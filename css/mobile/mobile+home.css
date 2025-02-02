@@ -5,6 +5,7 @@
         }
         .title{
             margin-right: 2rem;
+            transform: scale(0);
         }
         .menu{
             position: fixed;
@@ -43,6 +44,7 @@
             transition: all ease 0.5s;
             border: 0;
             margin: 0;
+            z-index: 1;
         }
         .offcanvas, ul{
             width: 100%;
@@ -99,6 +101,9 @@
         .home{
             margin-top: 8.5rem;
         }
+        .homepage{
+            transform: scale(0);
+        }
         .homepage, h3{
             color: white;
         }
@@ -107,6 +112,9 @@
             border: solid 2px aqua;
             width: 270px;
             height: 250px;
+        }
+        .homebuttons{
+            transform: scale(0);
         }
         .seeprojects{
             width: fit-content;
@@ -160,6 +168,8 @@
         }
         .title{
             margin-right: 2rem;
+            width: 88%;
+            transform: scale(0);
         }
         .menu{
             position: fixed;
@@ -198,6 +208,7 @@
             transition: all ease 0.5s;
             border: 0;
             margin: 0;
+            z-index: 1;
         }
         .offcanvas, ul{
             width: 100%;
@@ -254,6 +265,9 @@
         .home{
             margin-top: 8.5rem;
         }
+        .homepage{
+            transform: scale(0);
+        }
         .homepage, h3{
             color: white;
         }
@@ -263,6 +277,9 @@
             width: 300px;
             height: 300px;
             
+        }
+        .homebuttons{
+            transform: scale(0);
         }
         .seeprojects{
             width: fit-content;
