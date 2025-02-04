@@ -256,7 +256,11 @@
             box-shadow: 40px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
         }
     }
-    
+    @media  (min-width: 320px) and (max-width: 462px){
+        .home{
+            margin-top: 30%;
+        }
+    }
 
 
 
