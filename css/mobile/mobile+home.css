@@ -1,11 +1,17 @@
 
-    @media  (min-width: 320px) and (max-width: 400px){
+    @media  (min-width: 320px) and (max-width: 650px){
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
         .header{
             display: none;
         }
         .title{
-            margin-right: 2rem;
             transform: scale(0);
+            max-width: 86%;
         }
         .menu{
             position: fixed;
@@ -27,8 +33,9 @@
         }
         .ion-navicon-round{
             font-size: 2rem;
-            margin-left: 90%;
             position: fixed;
+            right: 1.5%;
+            top:1%
         }
 
         .offcanvas{
@@ -76,14 +83,6 @@
             padding-bottom: 20px;
 
         }
-        .selected{
-            padding-left: 45px;
-            padding-right: 45px;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            border-radius: 1rem;
-            width: 100%;
-        }
         a:active{
             animation-name: color;
             animation-duration: 1s;
@@ -99,171 +98,12 @@
             }
         }
         .home{
-            margin-top: 8.5rem;
-        }
-        .homepage{
-            transform: scale(0);
-        }
-        .homepage, h3{
-            color: white;
-        }
-        .img2{
-            border-radius: 3rem;
-            border: solid 2px aqua;
-            width: 270px;
-            height: 250px;
-        }
-        .homebuttons{
-            transform: scale(0);
-        }
-        .seeprojects{
-            width: fit-content;
-            height: fit-content;
-            margin-top: 1rem;
-            margin-left: 0.2rem;
-        }
-        .seeproject{
-            background-image: linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
-            border: solid 1px linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
-            padding: 15px;
-            border-radius: 1rem;
-            color: white;
-            font-size: 1rem;
-            transition: all ease 0.1s;
-        }
-        .seeproject:active{
-            cursor: pointer;
-            color: aqua;     
-            transform: scale(0.97);
-            background-image: linear-gradient(to right, rgb(50, 50, 158) , rgb(3, 189, 189));
-        }
-        .contactme{
-            width: fit-content;
-            height: fit-content;
-            margin-top: -3.25rem;
-            margin-left: 9.7rem;
-        }
-        .contactMe{
-            padding: 15px;
-            border-radius: 1rem;
-            color: white;
-            font-size: 1rem;
-            background-image: linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
-            border: solid 1px linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
-            transition: all ease 0.1s;
-        }
-        .contactMe:active{
-            cursor: pointer;
-            color: aqua;     
-            transform: scale(0.97);
-            background-image: linear-gradient(to right, rgb(50, 50, 158) , rgb(3, 189, 189));
-        }
-        .homebuttons2{
-            display: none;
-        }
-    }
-    @media  (min-width: 401px) and (max-width: 480px){
-        .header{
-            display: none;
-        }
-        .title{
-            margin-right: 2rem;
-            width: 88%;
-            transform: scale(0);
-        }
-        .menu{
-            position: fixed;
-        }
-        .logo{
-            font-size: 2rem;
-            animation: opacity ease infinite 2.5s;
-        }
-        @keyframes opacity{
-            0%{
-                opacity: 1;
-            }
-            50%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
-        }
-        .ion-navicon-round{
-            font-size: 2rem;
-            margin-left: 90%;
-            position: fixed;
-        }
-
-        .offcanvas{
-            position: fixed;
-            width: 30vw;
-            height: 100vh;
-            background: rgba(83, 83, 83, 0.836); 
-            top: 0;
-            right: 0;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            transform: translateX(100%);
-            transition: all ease 0.5s;
-            border: 0;
-            margin: 0;
-            z-index: 1;
-        }
-        .offcanvas, ul{
-            width: 100%;
-        }
-        .close{
-            -webkit-transform: translateY(-42vh);
-        }
-        .offcanvas.active{
-            transform: translateX(0);
-        }
-        .ion-close-round{
-            font-size: 1.7rem;
-            margin-left: 90%;
-        }
-        ul{
-            gap: 20px;
-            margin-top: 15vh;
-            margin-right: 4vw;
-        }
-        li{
-            font-size: 1.2rem;
-            color: white;
-            border-radius: 0;
-            border-bottom: solid 1px black;
-            -webkit-tap-highlight-color: transparent;
-            padding-left: 45px;
-            padding-right: 45px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-
-        }
-        .selected{
-            padding-left: 45px;
-            padding-right: 45px;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            border-radius: 1rem;
-            width: 100%;
-        }
-        a:active{
-            animation-name: color;
-            animation-duration: 1s;
-        }
-        @keyframes color{
-            0%{
-                color: aqua;
-                background-color: rgba(39, 38, 38, 0.589);
-            }
-            100%{
-                color: white;
-                background-color: transparent;
-            }
-        }
-        .home{
-            margin-top: 8.5rem;
+            text-align: center;
+            margin-top: 25%;
         }
         .homepage{
             transform: scale(0);
@@ -271,21 +111,27 @@
         .homepage, h3{
             color: white;
         }
+        .homepage h3{
+            font-size: 1.3rem;
+        }
+        .break{
+            height: 1%;
+            width: 100%;
+            border: 1px solid;
+            margin-top: 3%;
+        }
         .img2{
-            border-radius: 3rem;
+            border-radius: 50%;
             border: solid 2px aqua;
             width: 300px;
             height: 300px;
-            
+            margin-top: 3%;
         }
         .homebuttons{
-            transform: scale(0);
-        }
-        .seeprojects{
-            width: fit-content;
-            height: fit-content;
-            margin-left: 0.5rem;
-            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            margin-top: 3%;
         }
         .seeproject{
             background-image: linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
@@ -293,7 +139,7 @@
             padding: 15px;
             border-radius: 1rem;
             color: white;
-            font-size: 1.1rem;
+            font-size: 1rem;
             transition: all ease 0.1s;
         }
         .seeproject:active{
@@ -302,17 +148,11 @@
             transform: scale(0.97);
             background-image: linear-gradient(to right, rgb(50, 50, 158) , rgb(3, 189, 189));
         }
-        .contactme{
-            width: fit-content;
-            height: fit-content;
-            margin-top: -3.4rem;
-            margin-left: 11rem;
-        }
         .contactMe{
             padding: 15px;
             border-radius: 1rem;
             color: white;
-            font-size: 1.1rem;
+            font-size: 1rem;
             background-image: linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
             border: solid 1px linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
             transition: all ease 0.1s;

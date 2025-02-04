@@ -11,15 +11,7 @@ if (laptop.matches){
         home.style.transform = 'scale(100%)';
     
         const homebuttons2 = document.querySelector('.homebuttons2');
-        homebuttons2.style.transition = '1.5s';
-        homebuttons2.style.transform = 'translateX(0%)'
-     
-    
-        setTimeout(function(){
-            const homebuttons = document.querySelector('.homebuttons');
-            homebuttons.style.transition = '2s';
-            homebuttons.style.transform = 'translateX(0%)'
-        },3000)
+        homebuttons2.style.transform = 'scale(100%)'
     
         setTimeout(function(){
             const header = document.querySelector('.header');
