@@ -1,5 +1,6 @@
 @media (min-width: 651px) and (max-width: 1024px){
     body{
+        background-image: linear-gradient(130deg, purple, rgb(50, 50, 158));
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -12,19 +13,29 @@
         transform: scale(0);
     }
     .logo{
-        font-size: 2rem;
-        animation: opacity ease infinite 2.5s;
+        animation: opacity ease infinite 2s;
+        animation-duration: 4s;
     }
-    @keyframes opacity{
+    @keyframes opacity {
         0%{
+            opacity: 0;
+        }
+        25%{
             opacity: 1;
+            color: rgb(255, 0, 255);
         }
         50%{
             opacity: 0;
         }
-        100%{
+        75%{
             opacity: 1;
+            color: rgb(81, 81, 255);
         }
+        100%{
+            opacity: 0;
+            color: rgb(81, 81, 255);
+        }
+        
     }
     .ion-navicon-round{
         font-size: 2rem;
@@ -92,39 +103,83 @@
             background-color: transparent;
         }
     }
-    .home{
-        margin-left: 1%;
-    }
-    .homepage{
-        transform: scale(0);
-    }
-    .homepage, h3{
-        color: white;
-        display: flex;
-    }
-    .homepage h3 {
-        border-right: 2px solid;
-        height: 100%;
-    }
     .img2{
+        display: flex;
+        justify-self: center;
+        align-self: center;
         border-radius: 50%;
-        border: solid 2px aqua;
-        width: 350px;
-        height: 350px;
-        margin-right: 0.5rem;
+        width: 300px;
+        height: 300px;
     }
+    /* .circle{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border-left: 5px solid rgb(50, 50, 158);
+        border-top: 5px solid rgb(50, 50, 158);
+        border-right: 5px solid purple;
+        border-bottom: 5px solid purple;
+        transition: all linear 1s;
+        animation: colorRotate 1s infinite linear;
+        animation-duration: 2.5s;
+    }
+    @keyframes colorRotate {
+        0%{
+            transform: rotateZ(0deg);
+            border-left: 5px solid rgb(50, 50, 158);
+            border-top: 5px solid rgb(50, 50, 158);
+            border-right: 5px solid purple;
+            border-bottom: 5px solid purple;
+            box-shadow: 5px 0 50px rgb(47, 47, 202);
+        }
+        25%{
+            border-left: 5px solid rgb(50, 50, 158);
+            border-top: 5px solid rgb(50, 50, 158);
+            border-right: 5px solid purple;
+            border-bottom: 5px solid purple;
+            box-shadow: 5px 0 50px rgb(47, 47, 202);
+        }
+        50%{
+            border-left: 5px solid rgb(32, 32, 155);
+            border-top: 5px solid rgb(32, 32, 155);
+            border-right: 5px solid rgb(255, 0, 255);
+            border-bottom: 5px solid rgb(255, 0, 255);
+            box-shadow: -5px 0 50px rgb(255, 0, 255);
+        }
+        75%{
+            border-left: 5px solid rgb(32, 32, 155);
+            border-top: 5px solid rgb(32, 32, 155);
+            border-right: 5px solid rgb(255, 0, 255);
+            border-bottom: 5px solid rgb(255, 0, 255);
+            box-shadow: -5px 0 50px rgb(255, 0, 255);
+        }
+        100%{
+            transform: rotateZ(360deg);
+            border-left: 5px solid rgb(50, 50, 158);
+            border-top: 5px solid rgb(50, 50, 158);
+            border-right: 5px solid purple;
+            border-bottom: 5px solid purple;
+            box-shadow: 5px 0 50px rgb(47, 47, 202);
+        }
+
+    } */
     .homebuttons{
         display: none;
     }
     .homebuttons2{
+
         display: flex;
         justify-content: space-evenly;
         border-right: 2px solid;
+        width: 85%;
     }
     .seeproject2{
-        background-image: linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
-        border: solid 1px linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
+        box-shadow: 5px 5px 10px rgb(255, 0, 255);
+        background-image: linear-gradient(to right, rgb(50, 50, 158), rgb(255, 0, 255));
+        border: none;
         padding: 15px;
+        margin-left: -5%;
         border-radius: 1rem;
         color: white;
         font-size: 1.1rem;
@@ -132,24 +187,28 @@
     }
     .seeproject2:active{
         cursor: pointer;
-        color: aqua;     
+        color: white;     
         transform: scale(0.97);
-        background-image: linear-gradient(to right, rgb(50, 50, 158) , rgb(3, 189, 189));
+        background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
+        box-shadow: 40px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
     }
     .contactMe2{
         padding: 15px;
         border-radius: 1rem;
+        margin-left: -3%;
         color: white;
+        border: none;
         font-size: 1.1rem;
-        background-image: linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
-        border: solid 1px linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
+        box-shadow: 5px 5px 10px rgb(255, 0, 255);
+        background-image: linear-gradient(to right, rgb(50, 50, 158), rgb(255, 0, 255));
         transition: all ease 0.1s;
     }
     .contactMe2:active{
         cursor: pointer;
-        color: aqua;     
+        color: white;     
         transform: scale(0.97);
-        background-image: linear-gradient(to right, rgb(50, 50, 158) , rgb(3, 189, 189));
+        background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
+        box-shadow: 40px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
     }
 }
 @media  (min-width: 850px) and (max-width: 1024px){
