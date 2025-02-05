@@ -29,7 +29,7 @@ if (laptop.matches){
             seeproject2.style.display = 'flex'
             seeproject2.style.transform = 'scale(100%)'
             contactMe2.style.transform = 'scale(100%)'
-        },2000)
+        },1750)
 
         setTimeout(function(){
             const header = document.querySelector('.header');
