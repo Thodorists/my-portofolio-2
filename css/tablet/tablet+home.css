@@ -52,7 +52,7 @@
         position: fixed;
         width: 30vw;
         height: 100vh;
-        background: rgba(83, 83, 83, 0.836); 
+        background: rgba(83, 83, 83, 0.918); 
         top: 0;
         right: 0;
         display: flex;
@@ -306,7 +306,7 @@
         position: fixed;
         width: 30vw;
         height: 100vh;
-        background: rgba(83, 83, 83, 0.836); 
+        background: rgba(83, 83, 83, 0.918);  
         top: 0;
         right: 0;
         display: flex;
