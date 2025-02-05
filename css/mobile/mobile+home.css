@@ -210,14 +210,11 @@
             }
     
         }
-        .homebuttons{
-            display: none;
-        }
         .homebuttons2{
             display: flex;
             justify-content: space-evenly;
             width: 100%;
-            line-height: 8;
+            margin-top: 5%;
         }
         .seeproject2{
             box-shadow: 5px 5px 10px rgb(255, 0, 255);

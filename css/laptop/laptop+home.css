@@ -108,16 +108,15 @@
         display: flex;
         justify-content: space-evenly;
     }
-    .homebuttons{
-        display: none;
-    }
     .h3Withbuttons{
         display: flex;
         flex-direction: column;
     }
     .homebuttons2{
         display: flex;
+        justify-content: center;
         justify-content: space-evenly;
+        align-items: center;
         border-right: 2px solid;
     }
     .seeproject2{
@@ -137,7 +136,10 @@
         background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
         box-shadow: 30px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
     }
-
+    .seeproject2:active{
+        box-shadow: none;
+        transition: all 0.05s;
+    }
     .contactMe2{
         padding: 20px;
         border-radius: 1rem;
@@ -155,6 +157,10 @@
         background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
         box-shadow: 40px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
         z-index: 0;
+    }
+    .contactMe2:active{
+        box-shadow: none;
+        transition: all 0.05s;
     }
     .logo{
         animation: opacity ease infinite 2s;
@@ -322,9 +328,6 @@
         display: flex;
         justify-content: space-evenly;
     }
-    .homebuttons{
-        display: none;
-    }
     .h3Withbuttons{
         display: flex;
         flex-direction: column;
@@ -352,6 +355,10 @@
         background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
         box-shadow: 40px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
     }
+    .seeproject2:active{
+        box-shadow: none;
+        transition: all 0.05s;
+    }
     .contactMe2{
         padding: 20px;
         border-radius: 1rem;
@@ -368,6 +375,10 @@
         color: white;     
         background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
         box-shadow: 40px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
+    }
+    .contactMe2:active{
+        box-shadow: none;
+        transition: all 0.05s;
     }
     .logo{
         animation: opacity ease infinite 2s;
