@@ -114,8 +114,6 @@
         flex-direction: column;
         width: 100%;
         height: 100%;
-        position: absolute;
-        left: 0;
     }
     .homepage{
         display: flex;
