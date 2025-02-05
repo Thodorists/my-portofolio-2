@@ -131,11 +131,9 @@
         transition: all ease 0.3s;
         transform: scale(0);
     }
-
     .seeproject2:hover{
         cursor: pointer;
         color: white;     
-        transform: scale(0.97);
         background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
         box-shadow: 30px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
     }
@@ -154,7 +152,6 @@
     .contactMe2:hover{
         cursor: pointer;
         color: white;     
-        transform: scale(0.97);
         background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
         box-shadow: 40px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
         z-index: 0;
@@ -352,7 +349,6 @@
     .seeproject2:hover{
         cursor: pointer;
         color: white;     
-        transform: scale(0.97);
         background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
         box-shadow: 40px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
     }
@@ -370,7 +366,6 @@
     .contactMe2:hover{
         cursor: pointer;
         color: white;     
-        transform: scale(0.97);
         background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
         box-shadow: 40px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
     }

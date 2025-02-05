@@ -12,8 +12,21 @@ if (laptop.matches){
 
         const seeproject2 = document.querySelector('.seeproject2');
         seeproject2.style.display = 'none'
+        seeproject2.addEventListener('mouseover',function(){
+            seeproject2.style.transform = 'scale(0.97)'
+        })
+        seeproject2.addEventListener('mouseout',function(){
+            seeproject2.style.transform = 'scale(1)'
+        })
+
         const contactMe2 = document.querySelector('.contactMe2');
         contactMe2.style.display = 'none'
+        contactMe2.addEventListener('mouseover',function(){
+            contactMe2.style.transform = 'scale(0.97)'
+        })
+        contactMe2.addEventListener('mouseout',function(){
+            contactMe2.style.transform = 'scale(1)'
+        })
 
         setTimeout(function(){
             const seeproject2 = document.querySelector('.seeproject2');
