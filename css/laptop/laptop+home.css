@@ -1,6 +1,6 @@
 @media (min-width: 1401px){
     body{
-        background-image: linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
+        background-image: linear-gradient(130deg, purple, rgb(50, 50, 158));
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -20,8 +20,8 @@
         padding-bottom: 20px;
     }
     a:hover{
-        transition: all ease 0.5s;
-        color: aqua;
+        transition: all ease 0.3s;
+        color: rgb(255, 0, 255);
     }
     .home{
         display: flex;
@@ -29,16 +29,69 @@
         justify-content: space-between;
         width: 70%;
         transform: scale(0%);
-        margin-left: 9%;
+        margin-left: 7%;
         align-self: center;
     }
     .img2{
         width: 500px;
         height: 500px;
         border-radius: 50%;
-        border: solid 2px aqua;
+        margin-left: 25px;
     }
+    .circle{
+        width: 500px;
+        height: 500px;
+        margin-left: 25px;
+        border-radius: 50%;
+        border-left: 5px solid rgb(50, 50, 158);
+        border-top: 5px solid rgb(50, 50, 158);
+        border-right: 5px solid purple;
+        border-bottom: 5px solid purple;
+        position: absolute;
+        transition: all linear 1s;
+        animation: colorRotate 1s infinite linear;
+        animation-duration: 2.5s;
+    }
+    @keyframes colorRotate {
+        0%{
+            transform: rotateZ(0deg);
+            border-left: 5px solid rgb(50, 50, 158);
+            border-top: 5px solid rgb(50, 50, 158);
+            border-right: 5px solid purple;
+            border-bottom: 5px solid purple;
+            box-shadow: 5px 0 50px rgb(47, 47, 202);
+        }
+        25%{
+            border-left: 5px solid rgb(50, 50, 158);
+            border-top: 5px solid rgb(50, 50, 158);
+            border-right: 5px solid purple;
+            border-bottom: 5px solid purple;
+            box-shadow: 5px 0 50px rgb(47, 47, 202);
+        }
+        50%{
+            border-left: 5px solid rgb(32, 32, 155);
+            border-top: 5px solid rgb(32, 32, 155);
+            border-right: 5px solid rgb(255, 0, 255);
+            border-bottom: 5px solid rgb(255, 0, 255);
+            box-shadow: -5px 0 50px rgb(255, 0, 255);
+        }
+        75%{
+            border-left: 5px solid rgb(32, 32, 155);
+            border-top: 5px solid rgb(32, 32, 155);
+            border-right: 5px solid rgb(255, 0, 255);
+            border-bottom: 5px solid rgb(255, 0, 255);
+            box-shadow: -5px 0 50px rgb(255, 0, 255);
+        }
+        100%{
+            transform: rotateZ(360deg);
+            border-left: 5px solid rgb(50, 50, 158);
+            border-top: 5px solid rgb(50, 50, 158);
+            border-right: 5px solid purple;
+            border-bottom: 5px solid purple;
+            box-shadow: 5px 0 50px rgb(47, 47, 202);
+        }
 
+    }
     .homepage,h3{
         display: flex;
         flex-direction: row;
@@ -55,17 +108,15 @@
         display: flex;
         justify-content: space-evenly;
     }
-    .homebuttons{
-        display: none;
-    }
     .h3Withbuttons{
         display: flex;
         flex-direction: column;
     }
     .homebuttons2{
         display: flex;
+        justify-content: center;
         justify-content: space-evenly;
-        transform: scale(0);
+        align-items: center;
         border-right: 2px solid;
     }
     .seeproject2{
@@ -73,43 +124,66 @@
         border-radius: 1rem;
         color: white;
         font-size: 1.2rem;
-        background-image: linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
-        border: solid 1px linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
+        border: none;
+        box-shadow: 5px 5px 10px rgb(255, 0, 255);
+        background-image: linear-gradient(to right, rgb(50, 50, 158), rgb(255, 0, 255));
         transition: all ease 0.3s;
+        transform: scale(0);
     }
     .seeproject2:hover{
         cursor: pointer;
-        color: aqua;     
-        transform: scale(0.97);
-        background-image: linear-gradient(to right, rgb(50, 50, 158) , rgb(3, 189, 189));
+        color: white;     
+        background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
+        box-shadow: 30px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
+    }
+    .seeproject2:active{
+        box-shadow: none;
+        transition: all 0.05s;
     }
     .contactMe2{
         padding: 20px;
         border-radius: 1rem;
         color: white;
         font-size: 1.2rem;
-        background-image: linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
-        border: solid 1px linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
+        box-shadow: 5px 5px 10px rgb(255, 0, 255);
+        background-image: linear-gradient(to right, rgb(50, 50, 158), rgb(255, 0, 255));
+        border: none;
         transition: all ease 0.3s;
+        transform: scale(0);
     }
     .contactMe2:hover{
         cursor: pointer;
-        color: aqua;     
-        transform: scale(0.97);
-        background-image: linear-gradient(to right, rgb(50, 50, 158) , rgb(3, 189, 189));
+        color: white;     
+        background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
+        box-shadow: 40px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
+        z-index: 0;
+    }
+    .contactMe2:active{
+        box-shadow: none;
+        transition: all 0.05s;
     }
     .logo{
         animation: opacity ease infinite 2s;
+        animation-duration: 4s;
     }
     @keyframes opacity {
         0%{
             opacity: 0;
         }
-        50%{
+        25%{
             opacity: 1;
+            color: rgb(255, 0, 255);
+        }
+        50%{
+            opacity: 0;
+        }
+        75%{
+            opacity: 1;
+            color: rgb(81, 81, 255);
         }
         100%{
             opacity: 0;
+            color: rgb(81, 81, 255);
         }
         
     }
@@ -129,7 +203,7 @@
 
 @media (min-width: 1025px) and (max-width: 1400px){
     body{
-        background-image: linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
+        background-image: linear-gradient(130deg, purple, rgb(50, 50, 158));
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -160,14 +234,84 @@
         transform: scale(0%);
         margin-left: 13%;
         align-self: center;
+
+    }
+    .homepage{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+    }
+    .homepageimg{
+        border-radius: 50%;
+        display: flex;
+        justify-self: center;
+        align-self: center;
     }
     .img2{
+        display: flex;
+        justify-self: center;
+        align-self: center;
         width: 400px;
         height: 400px;
         border-radius: 50%;
-        border: solid 2px aqua;
+        margin: 0 25px 0 0;
+        border: none;
     }
+    .circle{
+        position: absolute;
+        margin: 0 25px 0 0;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        border-left: 5px solid rgb(50, 50, 158);
+        border-top: 5px solid rgb(50, 50, 158);
+        border-right: 5px solid purple;
+        border-bottom: 5px solid purple;
+        transition: all linear 1s;
+        animation: colorRotate 1s infinite linear;
+        animation-duration: 2.5s;
+    }
+    @keyframes colorRotate {
+        0%{
+            transform: rotateZ(0deg);
+            border-left: 5px solid rgb(50, 50, 158);
+            border-top: 5px solid rgb(50, 50, 158);
+            border-right: 5px solid purple;
+            border-bottom: 5px solid purple;
+            box-shadow: 5px 0 50px rgb(47, 47, 202);
+        }
+        25%{
+            border-left: 5px solid rgb(50, 50, 158);
+            border-top: 5px solid rgb(50, 50, 158);
+            border-right: 5px solid purple;
+            border-bottom: 5px solid purple;
+            box-shadow: 5px 0 50px rgb(47, 47, 202);
+        }
+        50%{
+            border-left: 5px solid rgb(32, 32, 155);
+            border-top: 5px solid rgb(32, 32, 155);
+            border-right: 5px solid rgb(255, 0, 255);
+            border-bottom: 5px solid rgb(255, 0, 255);
+            box-shadow: -5px 0 50px rgb(255, 0, 255);
+        }
+        75%{
+            border-left: 5px solid rgb(32, 32, 155);
+            border-top: 5px solid rgb(32, 32, 155);
+            border-right: 5px solid rgb(255, 0, 255);
+            border-bottom: 5px solid rgb(255, 0, 255);
+            box-shadow: -5px 0 50px rgb(255, 0, 255);
+        }
+        100%{
+            transform: rotateZ(360deg);
+            border-left: 5px solid rgb(50, 50, 158);
+            border-top: 5px solid rgb(50, 50, 158);
+            border-right: 5px solid purple;
+            border-bottom: 5px solid purple;
+            box-shadow: 5px 0 50px rgb(47, 47, 202);
+        }
 
+    }
     .homepage,h3{
         display: flex;
         flex-direction: row;
@@ -176,16 +320,13 @@
         font-size: 1.5rem;
     }
     .homepage h3{
-        max-width: 100%;
         border-right: 2px solid;
         height: 100%;
+        width: 94%;
     }
     .homepageimg{
         display: flex;
         justify-content: space-evenly;
-    }
-    .homebuttons{
-        display: none;
     }
     .h3Withbuttons{
         display: flex;
@@ -194,55 +335,73 @@
     .homebuttons2{
         display: flex;
         justify-content: space-evenly;
-        transform: scale(0);
         border-right: 2px solid;
+        width: 94%;
     }
     .seeproject2{
         padding: 20px;
         border-radius: 1rem;
         color: white;
         font-size: 1.2rem;
-        background-image: linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
-        border: solid 1px linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
+        box-shadow: 5px 5px 10px rgb(255, 0, 255);
+        background-image: linear-gradient(to right, rgb(50, 50, 158), rgb(255, 0, 255));
+        border: none;
         transition: all ease 0.3s;
+        transform: scale(0);
     }
     .seeproject2:hover{
         cursor: pointer;
-        color: aqua;     
-        transform: scale(0.97);
-        background-image: linear-gradient(to right, rgb(50, 50, 158) , rgb(3, 189, 189));
+        color: white;     
+        background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
+        box-shadow: 40px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
     }
-    .contactme2{
-        width: fit-content;
-        height: fit-content;
+    .seeproject2:active{
+        box-shadow: none;
+        transition: all 0.05s;
     }
     .contactMe2{
         padding: 20px;
         border-radius: 1rem;
+        border: none;
         color: white;
         font-size: 1.2rem;
-        background-image: linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
-        border: solid 1px linear-gradient(to right, rgb(3, 189, 189) , rgb(50, 50, 158));
+        box-shadow: 5px 5px 10px rgb(255, 0, 255);
+        background-image: linear-gradient(to right, rgb(50, 50, 158), rgb(255, 0, 255));
         transition: all ease 0.3s;
+        transform: scale(0);
     }
     .contactMe2:hover{
         cursor: pointer;
-        color: aqua;     
-        transform: scale(0.97);
-        background-image: linear-gradient(to right, rgb(50, 50, 158) , rgb(3, 189, 189));
+        color: white;     
+        background-image: linear-gradient(to right, rgb(255, 0, 255), rgb(32, 32, 155));
+        box-shadow: 40px 0 80px rgb(209, 2, 209),-40px 0 80px rgb(209, 2, 209);
+    }
+    .contactMe2:active{
+        box-shadow: none;
+        transition: all 0.05s;
     }
     .logo{
         animation: opacity ease infinite 2s;
+        animation-duration: 4s;
     }
     @keyframes opacity {
         0%{
             opacity: 0;
         }
-        50%{
+        25%{
             opacity: 1;
+            color: rgb(255, 0, 255);
+        }
+        50%{
+            opacity: 0;
+        }
+        75%{
+            opacity: 1;
+            color: rgb(81, 81, 255);
         }
         100%{
             opacity: 0;
+            color: rgb(81, 81, 255);
         }
         
     }
