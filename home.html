@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>My Professional Portofolio</title>
     <link rel="stylesheet" href="css/general/portofolio.css">
     <link rel="stylesheet" href="css/mobile/mobile+home.css">
     <link rel="stylesheet" href="css/laptop/laptop+home.css">
     <link rel="stylesheet" href="css/tablet/tablet+home.css">
-    <link rel="stylesheet" href="css/tabportrait/tabPortrait+home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
@@ -18,11 +17,11 @@
     <section class="header">
         <nav class="nav">
             <ul>
-                <li><a class="selected" href="home.html" target="_self">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a id ="home" href="home.html" target="_self">Home</a></li>
+                <li><a id="Projects" href="#">Projects</a></li>
+                <li><a id="About" href="#">About</a></li>
+                <li><a id="Services" href="#">Services</a></li>
+                <li><a id="Contact" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </section>
@@ -33,7 +32,7 @@
                 <i class="ion-close-round"></i>
             </a>
             <ul>
-                <li><a class="selected" href="home.html" target="_self">Home</a></li>
+                <li><a class="selected" href="home.html" target="_self">Home</a></li> 
                 <li><a class="selected" href="#">Projects</a></li>
                 <li><a class="selected" href="#">About</a></li>
                 <li><a class="selected" href="#">Services</a></li>
@@ -43,32 +42,25 @@
     </nav>
     <section class="home">
         <div class="homepage">
-            <h3>
-                Web developer - Designer απο visual studio κυρίως εξασκώ και είμαι αυτοδίδακτος στην<br>
-                Html, Css, Javascript, Jquery, React js, C# και ελπίζω σύντομα και Python AI.<br>
-                Στην συνέχεια της εξερευνησης του Portofolio θα δείτε τα Services μου τα Projects και την βιογραφία μου -> About.
-            </h3>
+            <div class="h3Withbuttons">
+                <h3>
+                    Web developer - Designer απο visual studio κυρίως εξασκώ και είμαι αυτοδίδακτος στην<br>
+                    Html, Css, Javascript, Jquery, React js, C# και ελπίζω σύντομα και Python AI.<br>
+                    Στην συνέχεια της εξερευνησης του Portofolio θα δείτε τα Services μου τα Projects και την βιογραφία μου -> About.
+                </h3>
+                <div class="homebuttons2">
+                        <button class="seeproject2">See my Projects</button>
+                        <button class="contactMe2">Contact me</button>
+                </div>
+            </div>
+            <div class="break2"></div>
             <div class="homepageimg">
-                <img class="img2" src="images/1000523612.jpg" alt="" width="300px" height="300px">
-            </div>
-        </div>
-        <div class="homebuttons">
-            <div class="seeprojects">
-                <button class="seeproject">See my Projects</button>
-            </div>
-            <div class="contactme">
-                <button class="contactMe">Contact me</button>
+                <img class="img2" src="images/1000523612.jpg" alt="image-of-myself" width="300px" height="300px">
+                <div class="circle"></div>
             </div>
         </div>
     </section>
-    <div class="homebuttons2">
-        <div class="seeprojects2">
-            <button class="seeproject2">See my Projects</button>
-        </div>
-        <div class="contactme2">
-            <button class="contactMe2">Contact me</button>
-        </div>
-    </div>
+
     <script src="js/animations.js"></script>
     <script src="js/mobilemenu.js"></script>
     <script src="js/mobile-animations.js"></script>

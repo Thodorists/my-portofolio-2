@@ -10,18 +10,19 @@ body{
     .title{
         text-align: center;
         color: white;
-        margin-top: 5%;
+        margin-top: 2%;
         height: 0vh;
+        position: absolute;
+        top: 0;
     }
     .logo{
-        color: aqua;
+        color: rgb(250, 6, 250);
         font-size: 2.5rem;
     }
     .img{
         border-radius: 6rem;
     }
     .header{
-        margin-top: 15%;
         background-color: rgba(83, 83, 83, 0.507);
         border-radius: 0.5rem;
         width: max-content;

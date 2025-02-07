@@ -9,11 +9,5 @@ if(mobile.matches){
         const home = document.querySelector('.homepage');
         home.style.transition = '2s'
         home.style.transform = 'scale(100%)';
-
-        const homebuttons = document.querySelector('.homebuttons');
-        setTimeout(()=>{
-            homebuttons.style.transition = '2s'
-            homebuttons.style.transform = 'scale(100%)';
-        },500)
     }
 }
