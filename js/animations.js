@@ -1,4 +1,4 @@
-var laptop = window.matchMedia("(min-width: 1025px)")
+const laptop = window.matchMedia("(min-width: 1025px)")
 
 if (laptop.matches){
     window.onload = function() {
