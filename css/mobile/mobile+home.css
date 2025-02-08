@@ -111,20 +111,6 @@
             padding-bottom: 20px;
     
         }
-        /* a:active{
-            animation-name: color;
-            animation-duration: 1s;
-        }
-        @keyframes color{
-            0%{
-                color: aqua;
-                background-color: rgba(39, 38, 38, 0.589);
-            }
-            100%{
-                color: white;
-                background-color: transparent;
-            }
-        } */
         .home{
             display: flex;
             justify-content: center;
