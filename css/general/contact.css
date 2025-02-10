@@ -1,0 +1,71 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(130deg, rgb(50, 50, 158), purple);
+}
+#canvas{
+    width: 340px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 30px purple, -1px -1px 30px rgb(117, 3, 117);
+    transition: all linear 2s;
+    animation-name: opacity;
+    animation-delay: 0s;
+    animation-duration: 5.5s;
+}
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.square{
+    width: 80%;
+    height: 60%;
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-bottom: 9%;
+    animation-name: opacity;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+.square h1{
+    margin-bottom: 3%;
+    width: 100%;
+}
+@media (max-width: 1024px) {
+    #canvas{
+        display: none;
+    }
+}
+@media (min-width: 1025px) {
+    a:hover{
+        color: rgb(255, 0, 255);
+    }
+    .fa{
+        margin-left: 1%;
+    }
+}

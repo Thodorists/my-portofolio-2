@@ -19,9 +19,6 @@ body{
         color: rgb(250, 6, 250);
         font-size: 2.5rem;
     }
-    .img{
-        border-radius: 6rem;
-    }
     .header{
         background-color: rgba(83, 83, 83, 0.507);
         border-radius: 0.5rem;
