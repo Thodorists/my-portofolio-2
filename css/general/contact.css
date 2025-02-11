@@ -15,8 +15,8 @@ body{
     height: 300px;
     border-radius: 50%;
     margin-top: 2%;
-    box-shadow: 1px 1px 30px purple, -1px -1px 30px rgb(117, 3, 117);
     transition: all linear 2s;
+    /* box-shadow: 7px 7px 10px black ; */
     animation-name: opacity;
     animation-delay: 0s;
     animation-duration: 5.5s;
@@ -57,6 +57,19 @@ body{
     margin-bottom: 3%;
     width: 100%;
 }
+
+@media (min-width: 1025px) {
+    a:hover{
+        color: rgb(255, 0, 255);
+    }
+    .fa{
+        margin-left: 1%;
+    }
+    .homepageimg{
+        display: none;
+    }
+}
+
 @media (max-width: 1024px) {
     body{
         margin: 0;
@@ -119,14 +132,3 @@ body{
     }
 }
 
-@media (min-width: 1025px) {
-    a:hover{
-        color: rgb(255, 0, 255);
-    }
-    .fa{
-        margin-left: 1%;
-    }
-    .homepageimg{
-        display: none;
-    }
-}
