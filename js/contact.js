@@ -37,9 +37,7 @@ function main(){
     const textureFlare0 = textureLoader.load('/Textures/eye3.png');
 
     scene.add(eye)
-    window.addEventListener('load', () => {
-        eye.rotation.set(0,-1.57,0)
-    });
+
     function rotation(event){
         let y = event.movementY * 0.01;
         let x = event.movementX * 0.01;
@@ -60,6 +58,10 @@ function main(){
     }
     document.addEventListener('mousemove', rotation);
     
+    window.addEventListener('load', () => {
+        eye.rotation.set(0,-1.54,0)
+    });
+
     function onWindowResize() {
         aspect = canvas.clientWidth / canvas.clientHeight
         camera.aspect = aspect
