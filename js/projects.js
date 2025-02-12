@@ -17,14 +17,7 @@ const camera = new THREE.PerspectiveCamera(fov, aspect, near, far)
     
 const renderer = new THREE.WebGLRenderer({canvas, antialias: true, alpha: true}) 
 renderer.setSize(canvas.clientWidth, canvas.clientHeight)
-window.addEventListener('resize', onWindowResize, false);
 
-function onWindowResize() {
-    aspect = canvas.clientWidth / canvas.clientHeight;
-    camera.aspect = aspect;
-    camera.updateProjectionMatrix();
-    renderer.setSize(canvas.clientWidth, canvas.clientHeight);
-}
 let scene = new THREE.Scene()
 camera.position.set(0, 0, 7)
 
