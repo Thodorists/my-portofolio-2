@@ -44,8 +44,8 @@ scene.add(ball)
 ball.scale.set(0.06,0.03,0.06)
 ball.position.set(0,2.75,0)
 ball.rotation.set(3.5,0,0)
-const canvasWidth = canvas.clientWidth;
-const canvasHeight = canvas.clientHeight;
+let canvasWidth = canvas.clientWidth;
+let canvasHeight = canvas.clientHeight;
 let isMouseOverAbout = false;
 //-------------------------------------------------------------------------
 //-------------------------------------------------------------------------
@@ -104,6 +104,13 @@ about4.addEventListener('mouseout', function(){
 //-------------------------------------------------------------------------
 ball.position.z = 0
 
+let resizeTimeout;
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+        location.reload();
+    }, 500);
+});
 
 function animate() {
     requestAnimationFrame(animate);
