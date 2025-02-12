@@ -224,7 +224,7 @@
     }
     a:hover{
         transition: all ease 0.5s;
-        color: aqua;
+        color: rgb(255, 0, 255);
     }
     .home{
         display: flex;

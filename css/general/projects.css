@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.header{
+    z-index: 1;
+}
+.homepageimg{
+    display: none;
+}
+#canvas{
+    width: 89vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 81%;
+    width: 84%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13%;
+    margin-top: 3%;
+    color: white;
+    animation-name: opacity;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+.about{
+    height: 47%;
+    width: 35%;
+    margin-right: 7%;
+    border: solid rgb(167, 2, 167);
+    border-radius: 50px;
+    z-index: 0;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    opacity: 0.9;
+}
+.about a:hover{
+    color: white;
+}
+.project1{
+    background-color: rgba(128, 0, 128, 0.719);
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-101.4%);
+}
+.about:hover{
+    .project1{
+        transition: all 0.15s linear;
+        opacity: 1;
+    }
+}
+.about2{
+    height: 47%;
+    width: 35%;
+    border: solid rgb(167, 2, 167);
+    border-radius: 50px;
+    z-index: 0;
+}
+.about3{
+    height: 47%;
+    width: 35%;
+    border: solid rgb(167, 2, 167);
+    margin-right: 7%;
+    border-radius: 50px;
+    z-index: 0;
+}
+.about4{
+    height: 47%;
+    width: 35%;
+    border: solid rgb(167, 2, 167);
+    border-radius: 50px;
+    z-index: 0;
+}
+.projects{
+    color: white;
+    font-size: 3rem;
+    margin-right: 25%;
+    animation-name: opacity;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+span{
+    color: rgb(255, 0, 255);
+}
+@media (max-width: 1024px) {
+    body{
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        overflow: auto;
+    }
+    #canvas{
+        display: none;
+    }
+    .homepageimg{
+        display: flex;
+        margin-top: 10%;
+    }
+    .projects{
+        margin: 0;
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        height: 100%;
+        margin-top: 5%;
+        justify-content: space-evenly;
+    }
+    .about{
+        margin-top: 1%;
+        width: 45%;
+        border: none;
+    }
+    .project1{
+        display: none;
+    }
+    .about2{
+        margin-top: 1%;
+        width: 45%;
+        border: none;
+    }
+    .about3{
+        margin-top: 1%;
+        width: 45%;
+        border: none;
+    }
+    .about4{
+        margin-top: 1%;
+        width: 45%;
+        border: none;
+    }
+}
+
+@media (min-width:320px) and (max-width: 650px) {
+    .img2{
+        width: 350px;
+        height: 350px;
+    }
+    .circle{
+        width: 350px;
+        height: 350px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .about{
+        width: 70%;
+        margin: 2%;
+    }
+    .about2{
+        width: 70%;
+        margin: 0;
+        margin: 2%;
+    }
+    .about3{
+        width: 70%;
+        margin: 2%;
+    }
+    .about4{
+        width: 70%;
+        margin: 2%;
+    }
+}
+@media (min-width:400px) and (max-width: 500px){
+    .img2{
+        width: 250px;
+        height: 250px;
+    }
+    .circle{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (min-width:320px) and (max-width: 400px){
+    .img2{
+        width: 200px;
+        height: 200px;
+    }
+    .circle{
+        width: 200px;
+        height: 200px;
+    }
+    .about{
+        width: 80%;
+        margin: 2%;
+    }
+    .about2{
+        width: 80%;
+        margin: 0;
+        margin: 2%;
+    }
+    .about3{
+        width: 80%;
+        margin: 2%;
+    }
+    .about4{
+        width: 80%;
+        margin: 2%;
+    }
+}

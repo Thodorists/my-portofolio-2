@@ -18,9 +18,6 @@ function main(){
     camera.position.set(0, 0, 3.5)
     
     let texture = new THREE.TextureLoader().load('/Textures/eye3.png')
-    texture.wrapS = THREE.RepeatWrapping;
-    texture.wrapT = THREE.RepeatWrapping;
-    texture.repeat.set(1, 1);
     const backgroundTexture = new THREE.TextureLoader().load('/images/space.jpg')
     scene.background = backgroundTexture;
 
@@ -29,7 +26,6 @@ function main(){
     const eye = new THREE.Mesh(SphereGeometry, material)
     
     const light = new THREE.HemisphereLight(0xb1becc, 0xffffff, 3)
-    const light2 = new THREE.PointLight( 0xffffff, 1.5, 2000 );
     scene.add(light)
     
     const textureLoader = new THREE.TextureLoader();

@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact me</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="css/general/portofolio.css">
     <link rel="stylesheet" href="css/mobile/mobile+home.css">
     <link rel="stylesheet" href="css/laptop/laptop+home.css">
     <link rel="stylesheet" href="css/tablet/tablet+home.css">
     <link rel="stylesheet" href="css/general/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/general/projects.css">
 </head>
 <body>
-    <canvas id="canvas"></canvas>
-
     <section class="header">
         <nav class="nav">
             <ul>
@@ -26,16 +24,7 @@
             </ul>
         </nav>
     </section>
-    <div class="homepageimg">
-        <img class="img2" src="images/me.png" alt="image-of-myself" width="300px" height="300px">
-        <div class="circle"></div>
-    </div>
-    <div class="square">
-        <h1>You can contact me via GitHub<a href="https://github.com/Thodorists" target="_blank"><i class="fa fa-github" style="font-size:40px"></i></a></h1>
-        <h1>You can contact me via Linkedin<a href="https://www.linkedin.com/in/thodoris-stefanis" target="_blank"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a></h1>
-        <h1>Email: Thodoris.stefanis @outlook.com</h1>
-    </div>
-    
+
     <nav class="memu">
         <a href="#" class="open-btn"><i class="ion-navicon-round"></i></a>
         <div class="offcanvas">
@@ -52,10 +41,33 @@
         </div>
     </nav>
 
+    <canvas id="canvas"></canvas>
 
-    <script src="/js/contact2.js"></script>
-    <script type="module" src="/js/contact.js"></script>
+    <div class="homepageimg">
+        <img class="img2" src="images/me.png" alt="image-of-myself" width="300px" height="300px">
+        <div class="circle"></div>
+    </div>
 
+    <h1 class="projects">My <span>Projects</span></h1>
+    <div class="container">
+        <div class="about">
+            <a href="https://github.com/Thodorists/space-invaders-game" target="_blank">
+                <img src="/images/space-invaders.jpg" alt=""><h2 class="project1">simple game based on html css and javascript</h2>
+            </a>
+        </div>
+        <div class="about2">
+            <a href="#"><img src="/images/coming-soon.jpg" alt=""></a>
+        </div>
+        <div class="about3">
+            <a href="#"><img src="/images/coming-soon.jpg" alt=""></a>
+        </div>
+        <div class="about4">
+            <a href="#"><img src="/images/coming-soon.jpg" alt=""></a>
+        </div>
+    </div>
+
+    <script type="module" src="/js/projects.js"></script>
     <script src="/js/mobilemenu.js"></script>
+    <script src="/js/contact2.js"></script>
 </body>
 </html>
