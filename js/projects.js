@@ -9,14 +9,14 @@ const about3 = document.querySelector('.about3')
 const about4 = document.querySelector('.about4')
 
 const fov = 50
-let aspect = canvas.clientWidth / canvas.clientHeight
+let aspect = window.innerWidth / window.innerHeight
 const near = 0.1
 const far = 2000
     
 const camera = new THREE.PerspectiveCamera(fov, aspect, near, far)
     
 const renderer = new THREE.WebGLRenderer({canvas, antialias: true, alpha: true}) 
-renderer.setSize(canvas.clientWidth, canvas.clientHeight)
+renderer.setSize(window.innerWidth , window.innerHeight)
 
 let scene = new THREE.Scene()
 camera.position.set(0, 0, 7)
@@ -42,7 +42,7 @@ const light = new THREE.HemisphereLight(0xb1becc, 0xffffff, 3)
 scene.add(light)
 scene.add(ball)
 ball.scale.set(0.06,0.03,0.06)
-ball.position.set(0,2.75,0)
+ball.position.set(0.7,2.75,0)
 ball.rotation.set(3.5,0,0)
 let canvasWidth = canvas.clientWidth;
 let canvasHeight = canvas.clientHeight;
@@ -51,12 +51,12 @@ let isMouseOverAbout = false;
 //-------------------------------------------------------------------------
 about.addEventListener('mouseover', function(){
     ball.position.y = -(canvasHeight / canvasWidth) - about.clientHeight / 200 + 4;
-    ball.position.x = -(canvasWidth / canvasHeight) - about.clientWidth / 190
+    ball.position.x = -(canvasWidth / canvasHeight) - about.clientWidth / 230
     ball.rotation.set(3.5,0,-1)
     isMouseOverAbout = true;
 })
 about.addEventListener('mouseout', function(){
-    ball.position.set(0,2.75,0)
+    ball.position.set(0.7,2.75,0)
     ball.rotation.set(3.5,0,0)
     isMouseOverAbout = false;
 })
@@ -64,12 +64,12 @@ about.addEventListener('mouseout', function(){
 //-------------------------------------------------------------------------
 about2.addEventListener('mouseover', function(){
     ball.position.y = -(canvasHeight / canvasWidth) - about.clientHeight / 200 + 4;
-    ball.position.x = +(canvasWidth / canvasHeight) + about.clientWidth / 175
+    ball.position.x = +(canvasWidth / canvasHeight) + about.clientWidth / 140
     ball.rotation.set(3.5,0,1)
     isMouseOverAbout = true;
 })
 about2.addEventListener('mouseout', function(){
-    ball.position.set(0,2.75,0)
+    ball.position.set(0.7,2.75,0)
     ball.rotation.set(3.5,0,0)
     isMouseOverAbout = false;
 })
@@ -77,12 +77,12 @@ about2.addEventListener('mouseout', function(){
 //-------------------------------------------------------------------------
 about3.addEventListener('mouseover', function(){
     ball.position.y = -(canvasHeight / canvasWidth) - about.clientHeight / 200 + 1.3;
-    ball.position.x = -(canvasWidth / canvasHeight) - about.clientWidth / 190
+    ball.position.x = -(canvasWidth / canvasHeight) - about.clientWidth / 230
     ball.rotation.set(3.5,0,-1)
     isMouseOverAbout = true;
 })
 about3.addEventListener('mouseout', function(){
-    ball.position.set(0,2.75,0)
+    ball.position.set(0.7,2.75,0)
     ball.rotation.set(3.5,0,0)
     isMouseOverAbout = false;
 })
@@ -90,13 +90,13 @@ about3.addEventListener('mouseout', function(){
 //-------------------------------------------------------------------------
 about4.addEventListener('mouseover', function(){
     ball.position.y = -(canvasHeight / canvasWidth) - about.clientHeight / 200 + 1.3;
-    ball.position.x = +(canvasWidth / canvasHeight) + about.clientWidth / 175
+    ball.position.x = +(canvasWidth / canvasHeight) + about.clientWidth / 140
     ball.rotation.set(3.5,0,1)
     isMouseOverAbout = true;
 })
 
 about4.addEventListener('mouseout', function(){
-    ball.position.set(0,2.75,0)
+    ball.position.set(0.7,2.75,0)
     ball.rotation.set(3.5,0,0)
     isMouseOverAbout = false;
 })
@@ -104,13 +104,7 @@ about4.addEventListener('mouseout', function(){
 //-------------------------------------------------------------------------
 ball.position.z = 0
 
-let resizeTimeout;
-window.addEventListener('resize', function() {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(() => {
-        location.reload();
-    }, 500);
-});
+
 
 function animate() {
     requestAnimationFrame(animate);
@@ -122,6 +116,18 @@ function animate() {
     else{
         ball.position.x += Math.sin(Date.now() * 0.01) * 0.003;
     }
+    let resizeTimeout;
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+        canvasWidth = window.innerWidth
+        canvasHeight = window.innerHeight
+        aspect = canvasWidth / canvasHeight;
+        camera.aspect = aspect;
+        camera.updateProjectionMatrix();
+        renderer.setSize(canvasWidth, canvasHeight);
+    }, 50);
+});
     renderer.render(scene, camera);
 }
 animate()
