@@ -16,7 +16,6 @@ body{
     border-radius: 50%;
     margin-top: 2%;
     transition: all linear 2s;
-    /* box-shadow: 7px 7px 10px black ; */
     animation-name: opacity;
     animation-delay: 0s;
     animation-duration: 5.5s;
